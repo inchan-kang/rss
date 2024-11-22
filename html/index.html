@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSS 생성기</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>RSS 생성기</h1>
+        <div class="top-buttons">
+            <button class="btn" onclick="addBoard()">대분류 추가</button>
+            <button class="btn" onclick="genOPML()">OPML 생성</button>
+            <button class="btn" onclick="genRSS()">RSS 생성</button>
+        </div>
+        <div id="inputContainer" class="board-container"></div>
+        <div id="resultContainer">
+            <h2>결과</h2>
+            <pre id="resultList" class="output-box"></pre>
+        </div>
+    </div>
+
+    <script src="results.js"></script>
+    <script src="exporter.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

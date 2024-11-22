@@ -1,0 +1,167 @@
+:root {
+    --primary-color: #4CAF50;
+    --hover-color: #45a049;
+    --border-color: #ccc;
+    --bg-color: #f4f4f4;
+    --board-bg-color: #f0f8ff;
+    --card-bg-color: #ffffff;
+    --input-border-color: #d1d1d1;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: #fff;
+    position: relative;
+}
+
+.top-buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--hover-color);
+}
+
+.board-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+    margin-top: 70px;
+}
+
+.board {
+    width: 250px;
+    background-color: var(--board-bg-color);
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.board .board-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card {
+    background-color: var(--card-bg-color);
+    padding: 10px;
+    border: 1px solid var(--input-border-color);
+    border-radius: 8px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 10px;
+}
+
+.card input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid var(--input-border-color);
+    border-radius: 5px;
+}
+
+.card .delete-card {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.card .delete-card:hover {
+    background: darkred;
+}
+
+.board .add-card-btn {
+    align-self: center;
+    margin-top: 10px;
+}
+
+.output-box {
+    text-align: left;
+    font-family: monospace;
+    background-color: var(--bg-color);
+    padding: 15px;
+    border-radius: 5px;
+    max-height: 300px;
+    overflow-y: auto;
+    word-wrap: break-word;
+}
+.card .search-engine-select {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid var(--input-border-color);
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.result-header {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.save-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.save-btn:hover {
+    background-color: #45a049;
+}
+
+.save-icon {
+    font-size: 16px;
+}
